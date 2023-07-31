@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>Proyecto</title>
+    <link rel="Shortcut icon" href="./Imagenes/Logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>DeTerrorStories</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <img src="./Imagenes/Logo.png" alt="Logo" width="70" height="70">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Historias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categoría
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./Brujas.html">Brujas</a></li>
+                    <li><a class="dropdown-item" href="./Demonios.html">Demonios</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Fantasmas</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Duendes</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Otro</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="contenido1">
+
+            <div class="titulo">
+                <h3>Dignas de película</h3>
+                <h1 class="titulo titulo2">Las mejores historias de terror mexicanas</h1>
+            </div>
+            <nav class="grilla">
+                
+            <div class="texto1">
+                <p>¡Bienvenidos al reino de lo escalofriante y lo macabro! Sumérgete en un mundo donde las sombras cobran vida y lo sobrenatural acecha en cada esquina. Bienvenidos a nuestra página web, el santuario virtual de las mejores historias de terror de todos los tiempos.
+
+                    Aquí, en este rincón virtual, nos dedicamos a explorar las profundidades de tus miedos más oscuros. Nuestra colección de historias abarca un amplio espectro de temáticas terroríficas, desde entidades espectrales que susurran en la noche hasta demonios que acechan en lo más profundo de la oscuridad. Si buscas brujas que lanzan hechizos mortales o brujos que desafían los límites de lo posible, estás en el lugar adecuado.
+                    
+                    Nuestro objetivo es transportarte a un universo donde lo paranormal y lo desconocido son protagonistas. <br> No importa si prefieres los relatos cortos que te harán saltar de tu asiento o las sagas más extensas que te atraparán durante horas, ¡tenemos algo para todos los amantes del terror aquí! 
+                    Deja que nuestras historias te envuelvan y te arrastren a un abismo de temor y fascinación. No apto para corazones débiles, nuestra página web es el destino definitivo para aquellos que buscan experimentar la emoción y el terror en su máxima expresión.
+                    
+                <br> ¡Bienvenidos al lugar donde las pesadillas se vuelven realidad! Bienvenidos a nuestro santuario del horror. </p>   
+                <div class="imagen2">
+                    <img src="./Imagenes/imagen1.png" alt="Demonios" width="500" height="400">
+                </div>
+            </div>
+            </nav>
+
+            <h2 class="til">Explora nuestras categorías</h2>
+                    <a class="link" href="./Brujas.html" style="color:#ffcad4">Brujas</a>
+                    <a class="link link1" href="./Demonios.html" style="color:#ffcad4">Demonios</a>
+            <h2 class="til">Comparte tu propia experiencia</h2>
+                    <div class="categoria">
+                        <select> 
+                            <option value="Brujas">Brujas</option>
+                            <option value="Demonios">Demonios</option>
+                            <option value="Fantasmas">Fantasmas</option>
+                            <option value="Duendes">Duendes</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <form>
+                        <div>
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Ingrese su mail" required>
+                        </div>
+                        <div>
+                            <textarea placeholder="Ingrese su experiencia.." 
+                            cols="60" 
+                            rows="10">
+                            </textarea>
+                        </div>
+                        <input type="submit" value="Enviar">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
