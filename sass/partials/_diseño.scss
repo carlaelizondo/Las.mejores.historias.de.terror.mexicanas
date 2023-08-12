@@ -1,0 +1,25 @@
+.grillita {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 3rem;
+    grid-template-areas: 
+      "regresar categoria"
+      "historias b";
+  
+    @media (min-width: 800px) {
+      align-content: space-evenly;
+      justify-items: stretch;
+      align-items: stretch;
+    }
+  }
+  
+  .grilla3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "uno  Bbrujas"
+      "Bbrujas2  dos"
+      "tres  tres";
+  }
+  

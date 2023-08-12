@@ -1,0 +1,23 @@
+.contenido, .contenido1, .contenidoBrujas, .contenidoH1, .contenidoH2 {
+    background-color: $background-color;
+  }
+  
+  .contenido1 {
+    color: #ffcad4;
+    font-size: larger;
+  }
+  
+  .texto1 {
+    margin: 20px;
+    text-align: justify;
+    font-size: 30px;
+    border-radius: 2rem;
+  }
+  
+  .textoimagendem {
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: red;
+  }
