@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel+Decorative&display=swap');
+*::selection{
+    color: darkmagenta;
+    background-color: mistyrose;
+}
+.contenido{
+    background-color: black;
+}
+.contenido1{
+    background-color: black;
+    color: #ffcad4;
+    font-size:larger;
+}
+.titulo{
+    color:#ff9f1c;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 10px;
+}
+.titulo2{
+    color: red;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size:70px;
+    text-align: center;
+    padding-top: 0;
+}
+.link {
+    display: list-item;
+    font-size: small;
+    background-color: #3c096c;
+    width: 100px;
+    margin: 10px;
+    padding: 20px 20px 15px 10px;
+    border: 3px double rgb(255, 174, 201);
+    position: relative;
+    text-align: center;
+    color: #ffcad4;
+    text-decoration: none;
+    font-family: 'Cinzel Decorative', cursive;
+}
+@media (min-width:800px){
+    .titulo2{
+       color: #da627d;
+    }
+
+}
+@media (min-width: 700px){
+    .titulo2{
+        color:  #ff9f1c;
+    }
+    .titulo{
+        color: #b5179e;
+    }
+    .texto1{
+        margin: 20px;
+        text-align: justify;
+        font-size: 30px;
+        border-radius: 2rem;
+        display: flex;
+    }
+    .imagen2{
+        border-radius: 2rem;
+        margin: 10px;
+    }
+    .link{
+        display: inline-block;
+        font-size: small;
+        background-color: #3c096c;
+        width: 100px;
+        margin: 10px;
+        padding: 20px 20px 15px 10px;
+        border: 3px double rgb(255, 174, 201);
+        position: relative;
+        text-align: center;
+        color: #ffcad4;
+        text-decoration: none;
+        font-family: 'Cinzel Decorative', cursive;
+    }
+}
+
+.texto1{
+    margin: 20px;
+    text-align: justify;
+    font-size: 30px;
+    border-radius: 2rem;
+    
+}
+
+.imagen2{
+    text-align: center;
+    margin-left: 50px;
+}
+.link:hover{
+    background-color: seagreen;
+}
+.link1 {
+    background-color: #66023c;
+}
+.link1:hover{
+    background-color: #ff9f1c;
+}
+
+.til{
+    color: #b5179e;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.categoria{
+    font-family: 'Julius Sans One', sans-serif;
+}
+.menu{
+   list-style-type: none;
+   display: flex;
+   gap: 2rem;
+   color: blueviolet;
+}
+.opciones{
+    display: flex;
+    flex-direction: row;/*row, column, row-reverse, column-reverse*/
+    flex-wrap: wrap; /* tambien se puede escribir como flex-flow: row wrap;*/
+    gap: 1rem; 
+    justify-content: flex-end;
+}
+
+/*-----------------BRUJAS-------------------*/
+
+.brujas{
+    color: #dc2f02;
+    font-size: 100px;
+    font-family: 'Castoro Titling', cursive;
+    text-align:end;
+    background-color: #132a13;
+}
+.contenidoBrujas{
+        background-color: #081c15;
+        color: #9b5de5;
+        justify-content: flex-start;
+        text-align: justify;
+        text-align: center;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        font-size: 30px;
+
+}
+
+.imagenB{
+    width: 700px;
+    height: 700px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.textoimagen2{
+    display:flex;
+    font-size: smaller;
+}
+
+.historias{
+    color: #132a13;
+    background-color: #a3b18a;
+    margin: 50px;
+    border: 3px ridge #e0aaff;
+    width: 500px;
+    padding:20px 20px 20px 20px;
+    grid-area: historias;
+}
+.imagen3{
+    margin-right: 10px;
+    position: static;
+}
+
+.categoria{
+    grid-area: categoria;
+   margin-left: 250px;
+}
+.regresar>*{
+    color: #9e0059;
+    font-size: 20px;
+    grid-area: regresar;
+}
+
+.b{
+    grid-area: b;
+}
+
+
+@media (min-width:800px){
+    .grillita{
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 3rem;
+        grid-template-areas: 
+        "regresar categoria"
+        "historias b";
+        align-content: space-evenly;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+}
+
+@media (min-width: 700px){
+    .historias{
+    margin: 50px;
+    border: 3px ridge #c153b4;
+    width: 500px;
+    padding:20px 20px 20px 20px;
+
+    }
+
+}
+/*-----------------Historia 1-------------------*/
+.contenidoH1{
+    background-color: #435f62;
+}
+.bosque{
+    width: fit-content;
+    height: 200px;
+}
+.titulobrujas{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulobrujas h1{
+    position: absolute;
+    color: aliceblue;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.Bbrujas{
+    grid-area: Bbrujas;
+    height: 500px;
+    width: 685px;
+    margin-top: 20px;
+}
+.uno{
+    grid-area: uno;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+.dos{
+    grid-area: dos;
+    padding-left: 0px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+.tres{
+    grid-area: tres;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+.Bbrujas2{
+    grid-area: Bbrujas2;
+    padding-left: 20px;
+    height: 550px;
+    width: 660px;
+    align-self: center;
+}
+.regresar2>*{
+    color: #e0aaff;
+    font-size: 20px;
+   text-align: center;
+   padding-bottom: 50px;
+   padding-left: 80px;
+}
+.grilla3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-areas:
+    "uno  Bbrujas"
+    "Bbrujas2  dos"
+    "tres  tres";
+}
+/*-----------------Demonios-------------------*/
+@media (min-width:800px){
+.textoimagendem{
+    display:flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: red;
+}
+.dem{
+    width: 700px;
+    height: 700px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    align-self: auto;
+}
+}
+.dem{
+    align-self: center;
+    align-content: center;
+}
+    .textoimagendem{
+        color: #dc2f02;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+        text-align: justify;
+}
+
+
+.conten{
+    background-color: black;
+}
+.tituloD{
+    color:red;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.regresar3>*{
+    color:#9b5de5;
+    font-size: 20px;
+   text-align: center;
+   padding-bottom: 50px;
+   padding-left: 80px;
+}
+.dem{
+    padding-right: 10px;
+}
+
+.historias2{
+    color: #132a13;
+    background-color: #ad4f08;
+    margin: 50px;
+    border: 3px ridge #3c096c;
+    width: 500px;
+    padding:20px 20px 20px 20px;
+}
+/*-----------------Historia 2-------------------*/
+.titulodemonios{
+    display: flex;
+}
+.contenidoH2{
+    background-color: #3c096c;
+}
+.titulodemonios h1{
+    color: #540b0e;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 50px;
+}
+.textd{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: larger;
+    padding: 10px 10px;
+    text-align: justify;
+    color:aliceblue;
+    display:flex;
+}
+.imagenh2{
+    height: 200px;
+    padding: 10px;
+    width:250px;
+}
+.imagenh5{
+    height: 300px;
+    padding: 10px;
+    width:300px;
+}
