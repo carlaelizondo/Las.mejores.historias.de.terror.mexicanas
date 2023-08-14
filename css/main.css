@@ -96,12 +96,14 @@
 }
 .link:hover{
     background-color: seagreen;
+    transform: translate(10px, -30px);
 }
 .link1 {
     background-color: #66023c;
 }
 .link1:hover{
     background-color: #ff9f1c;
+    transform: translate(10px, -30px);
 }
 
 .til{
@@ -166,7 +168,32 @@
     width: 500px;
     padding:20px 20px 20px 20px;
     grid-area: historias;
+
+
+    animation-name: cambiar-color;
+    animation-duration: 10s;
+    animation-delay: 1s; /*desde  que carga la pagina*/
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;/*cuantas veces se repite*/
+    animation-fill-mode: both;/*hasta el  ultimo estado del movimiento*/
 }
+
+@keyframes cambiar-color{
+    0%{
+        background-color: pink;
+    }
+    25%{
+        background-color: aquamarine;
+    }
+    
+    50%{
+        background-color: #c415c4;
+    }
+    100%{
+        background-color: pink ;
+    }
+}
+
 .imagen3{
     margin-right: 10px;
     position: static;
@@ -346,7 +373,31 @@
     border: 3px ridge #3c096c;
     width: 500px;
     padding:20px 20px 20px 20px;
+
+    animation-name: cambiar-color;
+    animation-duration: 10s;
+    animation-delay: 1s; /*desde  que carga la pagina*/
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;/*cuantas veces se repite*/
+    animation-fill-mode: both;/*hasta el  ultimo estado del movimiento*/
 }
+
+@keyframes cambiar-color{
+    0%{
+        background-color: pink;
+    }
+    25%{
+        background-color: rgb(8, 82, 57);
+    }
+    
+    50%{
+        background-color: #6e266e;
+    }
+    100%{
+        background-color: rgb(211, 97, 116) ;
+    }
+}
+
 /*-----------------Historia 2-------------------*/
 .titulodemonios{
     display: flex;

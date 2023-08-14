@@ -1,3 +1,4 @@
+
 .contenido, .contenido1, .contenidoBrujas, .contenidoH1, .contenidoH2 {
     background-color: $background-color;
   }
@@ -21,3 +22,14 @@
     text-align: justify;
     color: red;
   }
+  
+.historias{
+    color: #132a13;
+    background-color: #a3b18a;
+    margin: 50px;
+    border: 3px ridge #04127d;
+    width: 500px;
+    padding:20px 20px 20px 20px;
+    grid-area: historias;
+}
+  

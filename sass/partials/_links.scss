@@ -1,4 +1,5 @@
-.link {
+
+@mixin link-style {
     display: list-item;
     font-size: small;
     background-color: $link-color;
@@ -13,14 +14,25 @@
     font-family: 'Cinzel Decorative', cursive;
   
     &:hover {
-      background-color: seagreen;
+      background-color: #ff9f1c;
+      transform: translate(10px, -30px);
+      
     }
+  }
   
-    &.link1 {
-      background-color: #66023c;
+ 
+  $links: (
+    default: link-style,
+    link1: link-style,
+    
+  );
   
-      &:hover {
-        background-color: $primary-color;
-      }
+  
+  @each $name, $style in $links {
+    .link.#{$name} {
+      @include #{$style};
     }
-}
+  }
+  
+  
+  
